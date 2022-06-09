@@ -1,4 +1,4 @@
-const tail = require(`../tail`);
+const index = require(`../index`);
 const assert = require('chai').assert;
 const assertEqual = require(`../assertEqual`)
 
@@ -11,6 +11,6 @@ const assertEqual = require(`../assertEqual`)
 
 describe(`#tail`, () => {
   it(`returns ['Lighthouse', 'Labs'] for ['Hello', 'Lighthouse', 'Labs']`, () => {
-    assert.strictEqual(tail(['Hello', 'Lighthouse', 'Labs']), ['Lighthouse', 'Labs']);
+    assert.strictEqual(index.tail(['Hello', 'Lighthouse', 'Labs']), ['Lighthouse', 'Labs']);
   });
 });
