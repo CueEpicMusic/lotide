@@ -2,11 +2,11 @@ const index = require(`../index`);
 const assert = require('chai').assert;
 const assertEqual = require(`../assertEqual`)
 
-// const result = tail(["Hello", "Lighthouse", "Labs"]);
+// const result = index.tail(["Hello", "Lighthouse", "Labs"]);
 // console.log(assertEqual(result, ["Lighthouse", "Labs"]));
 
 // const words = ["Yo Yo", "Lighthouse", "Labs"];
-// tail(words);
+// index.tail(words);
 // console.log(assertEqual(words.length, 3));
 
 describe(`#tail`, () => {

@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@cueepicmusic/lotide",
   "version": "1.0.0",
   "description": "",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/CueEpicMusic/lotide.git"
   },
-  "author": "",
+  "author": "cueepicmusic",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/CueEpicMusic/lotide/issues"
