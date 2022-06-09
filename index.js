@@ -3,6 +3,7 @@ const tail   = require('./tail');
 const middle = require('./middle');
 const without = require('./without');
 const flatten = require('./flatten');
+const countOnly = require(`./countOnly`);
 
 
-module.exports = {head, tail, middle, without, flatten};
+module.exports = {head, tail, middle, without, flatten, countOnly};
