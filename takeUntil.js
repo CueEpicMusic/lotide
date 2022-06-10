@@ -1,12 +1,10 @@
-const assertArraysEqual = require('./assertArraysEqual');
-
 const takeUntil = (array, callback) => {
-  const result = []
+  const result = [];
   for (const item of array) {
     if (callback(item)) {
-      return result
-    } 
-    result.push(item)
+      return result;
+    }
+    result.push(item);
   }
 };
 

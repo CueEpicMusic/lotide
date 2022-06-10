@@ -1,6 +1,6 @@
 const index = require(`../index`);
 const assert = require('chai').assert;
-const assertEqual = require(`../assertEqual`)
+const assertEqual = require(`../assertEqual`);
 
 // const result = index.tail(["Hello", "Lighthouse", "Labs"]);
 // console.log(assertEqual(result, ["Lighthouse", "Labs"]));

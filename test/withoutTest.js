@@ -1,6 +1,6 @@
-const index = require(`../index`)
-const assertArraysEqual = require(`../assertArraysEqual`)
-const assert = require(`chai`).assert
+const index = require(`../index`);
+const assertArraysEqual = require(`../assertArraysEqual`);
+const assert = require(`chai`).assert;
 
 // console.log(assertArraysEqual(index.without([1, 2, 3], [1]), [2, 3])) // => [2, 3]
 // console.log(assertArraysEqual(index.without(["1", "2", "3"], [1, 2, "3"]), ['1', '2'])) // => ["1", "2"]

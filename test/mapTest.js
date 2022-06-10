@@ -10,6 +10,6 @@ const results1 = index.map(words, word => word[0]);
 
 describe(`#map`, () => {
   it(`return ['g', 'c', 't', 'm', 't'] for ["ground", "control", "to", "major", "tom"]`, () => {
-    assert.deepEqual(results1, ['g', 'c', 't', 'm', 't'])
-  })
-})
+    assert.deepEqual(results1, ['g', 'c', 't', 'm', 't']);
+  });
+});

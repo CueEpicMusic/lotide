@@ -1,6 +1,6 @@
 const index = require(`../index`);
 const assertArraysEqual = require(`../assertArraysEqual`);
-const assert = require(`chai`).assert
+const assert = require(`chai`).assert;
 
 // console.log(assertArraysEqual(letterPositions("hello").h, [0]));
 
