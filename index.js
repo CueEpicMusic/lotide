@@ -9,6 +9,7 @@ const letterPositions = require('./letterPositions');
 const findKeyByValue = require('./findKeyByValue');
 const map = require('./map');
 const takeUntil = require('./takeUntil');
+const findKey = require('./findKey');
 
 
-module.exports = {head, tail, middle, without, flatten, countOnly, countLetters, letterPositions, findKeyByValue, map, takeUntil};
+module.exports = {head, tail, middle, without, flatten, countOnly, countLetters, letterPositions, findKeyByValue, map, takeUntil, findKey};
