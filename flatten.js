@@ -1,4 +1,4 @@
-const flatten = function(arrays) {
+const flatten = function (arrays) {
   let newArr = [];
   newArr = arrays.flat(1);
   return newArr;

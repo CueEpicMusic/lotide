@@ -1,15 +1,15 @@
-const assertEqual = require('../assertEqual');
-const index = require('../index');
-const assert = require('chai').assert;
+const { findKey } = require("../index");
+const assert = require("chai").assert;
+// const assertEqual = require('../assertEqual');
 
-// console.log(assertEqual(index.findKey({
+// assertEqual(findKey({
 //   "Blue Hill": { stars: 1 },
 //   "Akaleri":   { stars: 3 },
 //   "noma":      { stars: 2 },
 //   "elBulli":   { stars: 3 },
 //   "Ora":       { stars: 2 },
 //   "Akelarre":  { stars: 3 }
-// }, x => x.stars === 2), "noma")) // => "noma"
+// }, x => x.stars === 2), "noma") // => "noma"
 
 describe(`#findKey`, () => {
   it(`return 'noma for 
@@ -21,14 +21,19 @@ describe(`#findKey`, () => {
   "Ora":       { stars: 2 },
   "Akelarre":  { stars: 3 }
   }`, () => {
-    assert.strictEqual(index.findKey(
-      {
-        "Blue Hill": { stars: 1 },
-        "Akaleri":   { stars: 3 },
-        "noma":      { stars: 2 },
-        "elBulli":   { stars: 3 },
-        "Ora":       { stars: 2 },
-        "Akelarre":  { stars: 3 }
-      }, x => x.stars === 2), 'noma');
+    assert.strictEqual(
+      findKey(
+        {
+          "Blue Hill": { stars: 1 },
+          Akaleri: { stars: 3 },
+          noma: { stars: 2 },
+          elBulli: { stars: 3 },
+          Ora: { stars: 2 },
+          Akelarre: { stars: 3 },
+        },
+        (x) => x.stars === 2
+      ),
+      "noma"
+    );
   });
 });

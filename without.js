@@ -1,4 +1,4 @@
-const without = function(source, itemsToRemove) {
+const without = function (source, itemsToRemove) {
   const result = [];
 
   for (let num of source) {
@@ -12,4 +12,3 @@ const without = function(source, itemsToRemove) {
 };
 
 module.exports = without;
-

@@ -1,16 +1,15 @@
-const index = require(`../index`);
-const assert = require('chai').assert;
-const assertEqual = require(`../assertEqual`);
+const { tail } = require(`../index`);
+const assert = require("chai").assert;
+// const assertEqual = require(`../assertEqual`);
 
-// const result = index.tail(["Hello", "Lighthouse", "Labs"]);
-// console.log(assertEqual(result, ["Lighthouse", "Labs"]));
-
-// const words = ["Yo Yo", "Lighthouse", "Labs"];
-// index.tail(words);
-// console.log(assertEqual(words.length, 3));
+// const result = tail(["Hello", "Lighthouse", "Labs"]);
+// assertEqual(result, ["Lighthouse", "Labs"]);
 
 describe(`#tail`, () => {
   it(`returns ['Lighthouse', 'Labs'] for ['Hello', 'Lighthouse', 'Labs']`, () => {
-    assert.strictEqual(index.tail(['Hello', 'Lighthouse', 'Labs']), ['Lighthouse', 'Labs']);
+    assert.strictEqual(tail(["Hello", "Lighthouse", "Labs"]), [
+      "Lighthouse",
+      "Labs",
+    ]);
   });
 });
