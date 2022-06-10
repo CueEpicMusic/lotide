@@ -1,11 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (JSON.stringify(actual)=== JSON.stringify(expected)) {
-    return `✅️✅️✅️Assertion Passed: ${JSON.stringify(actual)} === ${JSON.stringify(expected)}`;
-  } else {
-    return `🔴️🔴️🔴️Assertion Failed: ${JSON.stringify(actual)} !== ${JSON.stringify(expected)}`;
-  }
-
-};
+const assertEqual = require('./assertEqual');
 
 const countLetters = function(allItems) {
   const results = {};
@@ -23,5 +16,4 @@ const countLetters = function(allItems) {
   return results;
 }
 
-console.log(assertEqual(countLetters('LHL'), {L: 2, H: 1}))
-console.log(countLetters('lighthouse in the house'))
+module.exports = countLetters;
