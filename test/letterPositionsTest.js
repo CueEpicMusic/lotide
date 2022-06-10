@@ -11,6 +11,9 @@ const assert = require(`chai`).assert
 // console.log(assertArraysEqual(letterPositions("hello").o, [4]));
 
 describe(`#letterPositions`, () => {
+  it(`return { h: [ 0 ], e: [ 1 ], l: [ 2, 3 ], o: [ 4 ] } for ('hello')`, () => {
+    assert.deepEqual(index.letterPositions('hello'), { h: [ 0 ], e: [ 1 ], l: [ 2, 3 ], o: [ 4 ] });
+  });
   it(`return [0] for ('hello').h`, () => {
     assert.deepEqual(index.letterPositions('hello').h, [0]);
   });

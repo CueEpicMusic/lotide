@@ -35,4 +35,7 @@ describe(`#countOnly`, () => {
   it(`returns undefined fo ['Agouhanna']`, () => {
     assert.strictEqual(result1['Agouhanna'], undefined);
   });
+  it(`returns { Fang: 2, Jason: 1} fo { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false }`, () => {
+    assert.deepEqual(index.countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false }),{ Fang: 2, Jason: 1});
+  });
 });
